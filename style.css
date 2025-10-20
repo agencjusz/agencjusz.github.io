@@ -1,0 +1,79 @@
+* { margin: 0px, ; padding: 0; box-sizing: border-box;}
+body { 
+    font-family: 'DejaVu Sans Mono', sans-serif; 
+    line-height: 1.6;
+    background-color: #d6b38f; 
+}
+header {
+    background-color: #130d06;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul { list-style: none; display: flex; }
+nav ul li { margin-left: 20px; }
+nav ul li a { color: #fff; text-decoration: none; }
+nav ul li:hover{background-color: #c8996a; border-radius: 6px;}
+
+.logo {
+    font-family: 'Pinyon Script' ,cursive;
+    font-size: 32px;
+}
+.hero {
+    position: relative;
+    padding: 80px 20px;
+    text-align: center;
+    color: black;
+    overflow: hidden;
+}
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url("https://images.pexels.com/photos/4792084/pexels-photo-4792084.jpeg");
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px);      /* <<< tu kontrolujesz rozmycie */
+    z-index: -1;            /* wysyła tło pod tekst */
+}
+
+.hero h2 { 
+    font-size: 32px; 
+    margin-bottom: 20px; }
+
+.container{margin: 0 auto; max-width: 1200px;}
+
+.about, .services, .blog, .portfolio, .contact{
+    padding: 40px 20px;
+    background-color: #f9f2ec;
+}
+.services .service, .blog article, .portfolio .project, .faq{
+    border: 1px solid #eee;
+    padding: 20px;
+    margin: 20 0;
+    border-radius: 6px;
+    background-color: #f9f2ec;
+}
+img { 
+    width: 70%;
+    height: 700px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 6px;
+    object-fit: cover;
+}
+form input, form textarea, form button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+footer {
+    background: #130d06;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
