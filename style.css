@@ -1,6 +1,7 @@
 * { margin: 0px ; padding: 0; box-sizing: border-box;}
 body { 
     font-family: 'DejaVu Sans Mono', sans-serif; 
+    font-display: swap;
     line-height: 1.6;
     background-color: #d6b38f; 
 }
@@ -315,4 +316,5 @@ footer {
         margin-top: 20px;
     }
 }
+
 
