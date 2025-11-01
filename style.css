@@ -51,20 +51,6 @@ nav ul li:hover{background-color: #c8996a; }
     font-size: 32px; 
     margin-bottom: 20px; }
 
-.hero button {
-    background: #827282;
-    color: #130d06;
-    border: none;
-    padding: 12px 24px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background 0.3s ease;
-}
-
-.hero button:hover {
-    background: #a196a1;
-}
 
 .container{margin: 0 auto; max-width: 1200px;}
 
@@ -329,3 +315,4 @@ footer {
         margin-top: 20px;
     }
 }
+
