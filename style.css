@@ -10,9 +10,7 @@ body {
     background-color: #d6b38f; 
 }
 
-/* ========================================================= */
 /* --- 1. NAGŁÓWEK (MOBILE FIRST: UKŁAD PIONOWY) --- */
-/* ========================================================= */
 header {
     background-color: #130d06;
     color: #fff;
@@ -56,9 +54,7 @@ nav ul li:hover{
     background-color: #c8996a; 
 }
 
-/* ========================================================= */
 /* --- 2. SEKCJE OGÓLNE --- */
-/* ========================================================= */
 .hero {
     position: relative;
     padding: 80px 20px;
@@ -112,9 +108,7 @@ img {
     object-fit: cover;
 }
 
-/* ========================================================= */
 /* --- 3. OFERTA (USŁUGI) --- */
-/* ========================================================= */
 .services .service {
     display: flex;
     flex-direction: column;
@@ -138,9 +132,7 @@ img {
     transform: scale(1.03);
 }
 
-/* ========================================================= */
 /* --- 4. PROJEKTY --- */
-/* ========================================================= */
 .portfolio {
     display: flex;
     flex-direction: column;
@@ -180,9 +172,7 @@ img {
     transform: scale(1.03);
 }
 
-/* ========================================================= */
 /* --- 5. KONTAKT & LOKALIZACJA --- */
-/* ========================================================= */
 .contact-container,
 .location-container {
     display: flex;
@@ -256,8 +246,6 @@ img {
 .instagram:hover { background-color: #862d59; }
 .pinterest:hover { background-color: #CC0000; }
 
-
-/* LOKALIZACJA - detale (adres i godziny) */
 .map-wrapper {
     flex: 1 1 100%; /* Na mobile zajmuje pełną szerokość */
     max-width: 100%;
@@ -290,9 +278,7 @@ img {
     padding: 2px 0;
 }
 
-/* ========================================================= */
 /* --- 6. FAQ i STOPKA --- */
-/* ========================================================= */
 .faq{
     display: flex;
     flex-direction: column;
@@ -318,10 +304,7 @@ footer {
     text-align: center;
 }
 
-
-/* ========================================================= */
 /* --- MEDIA QUERY: DESKTOP (od 901px) --- */
-/* ========================================================= */
 @media (min-width: 901px) {
     /* --- NAGŁÓWEK --- */
     header {
@@ -344,7 +327,6 @@ footer {
         padding: 0;
     }
     
-    /* --- OFERTA --- */
     .services .service-images {
         flex-direction: row; /* Zmień układ zdjęć na wierszowy */
         justify-content: space-around; /* Rozłóż zdjęcia równomiernie */
@@ -362,7 +344,6 @@ footer {
         max-width: 400px; /* Ogranicz szerokość dla desktopu */
     }
 
-    /* --- KONTAKT & LOKALIZACJA --- */
     .contact-container,
     .location-container {
         flex-direction: row; /* Zmień układ na wierszowy */
@@ -379,7 +360,6 @@ footer {
         margin-top: 0;
     }
     
-    /* LOKALIZACJA: Widok mapy i detali obok siebie */
     .map-wrapper {
         flex: 2 1 400px; 
         max-width: 700px;
@@ -390,8 +370,6 @@ footer {
     }
 }
 
-
-/* Pozostałe media queries dla mniejszych urządzeń */
 @media (max-width: 600px) {
     .hero {
       padding: 60px 15px;
@@ -399,4 +377,5 @@ footer {
     .about p {
       font-size: 15px;
     }
+
 }
