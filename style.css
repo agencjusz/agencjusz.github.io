@@ -227,6 +227,55 @@ img {
 .instagram:hover { background-color: #862d59; }
 .pinterest:hover { background-color: #CC0000; }
 
+.location {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f2ec;
+    border: 1px solid gray;
+    border-radius: 8px;
+}
+
+.location-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.map-wrapper {
+    flex: 2 1 400px; 
+    max-width: 700px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.map-wrapper iframe {
+    display: block;
+}
+
+.details {
+    flex: 1 1 250px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+.details h3 {
+    margin-top: 0;
+    margin-bottom: 10 px;
+}
+
+.details p, .details ul {
+    margin-bottom: 20 px;
+    list-style: none;
+    padding-left: 0;
+}
+.details ul li {
+    padding: 2 px 0;
+}
 
 .faq{
     display: flex;
@@ -237,27 +286,27 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 10px;
+    margin-bottom: 10 px;
 }
 .faq .question{
-    padding: 2px;
-    margin-bottom: 10px;
+    padding: 2 px;
+    margin-bottom: 10 px;
     background-color: #f9f2ec;
-    border: 1px solid #ddd;
-    border-radius: 6px;   
+    border: 1 px solid #ddd;
+    border-radius: 6 px;   
 }
 
 footer {
     background: #130d06;
     color: #fff;
-    padding: 20px;
+    padding: 20 px;
     text-align: center;
 }
 
 
 
-@media (max-width: 900px) {
-  header {
+@media (max-width: 900 px) {
+    header {
     flex-direction: column;
     align-items: flex-start;
     column-gap: 10px;
@@ -289,6 +338,55 @@ footer {
   .hero p {
     font-size: 16px;
   }
+    .services .service-images {
+        flex-direction: column; /* Zmień układ z wiersza na kolumnę */
+        align-items: center; /* Wyśrodkuj zdjęcia w kolumnie */
+    }
+
+    .services .service-images img {
+        width: 100%; /* Spraw, by zdjęcia zajmowały pełną szerokość dostępną w usłudze */
+        max-width: 400px; /* Ogranicz maksymalną szerokość, aby nie były zbyt duże */
+        margin-bottom: 15px; /* Dodaj odstęp pod każdym zdjęciem */
+    }
+
+    /* 2. PROJEKTY JEDNO POD DRUGIM */
+    .portfolio .project_wrap {
+        flex-direction: column; /* Zmień układ z wiersza na kolumnę */
+        align-items: center; /* Wyśrodkuj projekty */
+    }
+
+    .portfolio .project {
+        max-width: 100%; /* Projekty zajmują pełną dostępną szerokość */
+        margin-bottom: 20px; /* Dodaj odstęp między projektami */
+    }
+    
+    /* 3. KONTAKT: SOCIAL MEDIA POD FORMULARZEM
+       (Ta sekcja jest już częściowo obsłużona w @media (max-width: 768px), 
+       ale dla pewności stosujemy tu również regułę) */
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social {
+        flex: 1 1 auto;
+        margin-top: 20px;
+    }
+    .location-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .map-wrapper {
+        flex: 1 1 100%;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .details {
+        flex: 1 1 100%;
+        width: 100%;
+    }
 }
 
 @media (max-width: 600px) {
@@ -316,5 +414,6 @@ footer {
         margin-top: 20px;
     }
 }
+
 
 
